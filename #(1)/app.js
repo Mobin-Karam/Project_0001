@@ -17,6 +17,11 @@ imagebox5.addEventListener('click', () => {
     element3.style.opacity = '.5'
     element4.style.opacity = '.5'
     element5.style.opacity = '.5'
+    element.style.setProperty('--after', 'inline-block')
+    element2.style.setProperty('--after', 'none')
+    element3.style.setProperty('--after', 'none')
+    element4.style.setProperty('--after', 'none')
+    element5.style.setProperty('--after', 'none')
 });
 
 let imagebox4 = document.querySelector('.imgbox4')
@@ -36,6 +41,11 @@ imagebox4.addEventListener('click', () => {
     element3.style.opacity = '.5'
     element4.style.opacity = '.5'
     element5.style.opacity = '.5'
+    element.style.setProperty('--after', 'none')
+    element2.style.setProperty('--after', 'inline-block')
+    element3.style.setProperty('--after', 'none')
+    element4.style.setProperty('--after', 'none')
+    element5.style.setProperty('--after', 'none')
 });
 
 let imagebox3 = document.querySelector('.imgbox3')
@@ -55,6 +65,11 @@ imagebox3.addEventListener('click', () => {
     element3.style.opacity = '1'
     element4.style.opacity = '.5'
     element5.style.opacity = '.5'
+    element.style.setProperty('--after', 'none')
+    element2.style.setProperty('--after', 'none')
+    element3.style.setProperty('--after', 'inline-block')
+    element4.style.setProperty('--after', 'none')
+    element5.style.setProperty('--after', 'none')
 
 });
 
@@ -75,6 +90,11 @@ imagebox2.addEventListener('click', () => {
     element3.style.opacity = '.5'
     element4.style.opacity = '1'
     element5.style.opacity = '.5'
+    element.style.setProperty('--after', 'none')
+    element2.style.setProperty('--after', 'none')
+    element3.style.setProperty('--after', 'none')
+    element4.style.setProperty('--after', 'inline-block')
+    element5.style.setProperty('--after', 'none')
 });
 
 let imagebox1 = document.querySelector('.imgbox1')
@@ -94,9 +114,13 @@ imagebox1.addEventListener('click', () => {
     element3.style.opacity = '.5'
     element4.style.opacity = '.5'
     element5.style.opacity = '1'
-    let text = window.getComputedStyle(element5, '::after');
-    text.style.display = 'inline-block';
+    element.style.setProperty('--after', 'none')
+    element2.style.setProperty('--after', 'none')
+    element3.style.setProperty('--after', 'none')
+    element4.style.setProperty('--after', 'none')
+    element5.style.setProperty('--after', 'inline-block')
 });
+
 
 
 

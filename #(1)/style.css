@@ -38,20 +38,29 @@
     -o-transition: all .5s;
 }
 
+
+
 .container .inner .box .imgbox1::after {
     content: 'NewYork';
     position: absolute;
-    display: inline-block;
-    color: #fff;
+    display: var(--after, none);
+    color: #ffffff;
+    font-size: 30px;
     top: 354px;
     left: 42px;
+    transition: all .8s ease-in .5s ;
+    -webkit-transition: all .8s ease-in .5s ;
+    -moz-transition: all .8s ease-in .5s ;
+    -ms-transition: all .8s ease-in .5s ;
+    -o-transition: all .8s ease-in .5s ;
 }
 
 .container .inner .box .imgbox2::after {
     content: 'Tehran';
     position: absolute;
-    display: none;
-    color: #fff;
+    display: var(--after, none);
+    color: #ffffff;
+    font-size: 30px;
     top: 354px;
     left: 42px;
 }
@@ -59,8 +68,9 @@
 .container .inner .box .imgbox3::after {
     content: 'London';
     position: absolute;
-    display: none;
-    color: #fff;
+    display: var(--after, none);
+    color: #ffffff;
+    font-size: 30px;
     top: 354px;
     left: 42px;
 }
@@ -68,8 +78,9 @@
 .container .inner .box .imgbox4::after {
     content: 'Mashhad';
     position: absolute;
-    display: none;
+    display: var(--after, none);
     color: #fff;
+    font-size: 30px;
     top: 354px;
     left: 42px;
 }
@@ -77,8 +88,9 @@
 .container .inner .box .imgbox5::after {
     content: 'Nowdeshah';
     position: absolute;
-    display: none;
-    color: #fff;
+    display: var(--after, none);
+    color: #ffffff;
+    font-size: 30px;
     top: 354px;
     left: 42px;
 }
@@ -100,10 +112,7 @@
 .container .inner .box .imgbox1 {
     width: 70px;
     height: 400px;
-    background-image: url(./img/img01.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #194134;
     opacity: .5;
     z-index: 999;
 }
@@ -111,10 +120,7 @@
 .container .inner .box .imgbox2 {
     width: 70px;
     height: 400px;
-    background-image: url(./img/img02.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #194134;
     opacity: .5;
     z-index: 999;
 }
@@ -122,10 +128,7 @@
 .container .inner .box .imgbox3 {
     width: 70px;
     height: 400px;
-    background-image: url(./img/img03.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #194134;
     opacity: .5;
     z-index: 999;
 }
@@ -133,10 +136,7 @@
 .container .inner .box .imgbox4 {
     width: 70px;
     height: 400px;
-    background-image: url(./img/img04.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #194134;
     opacity: .5;
     z-index: 999;
 }
@@ -144,12 +144,9 @@
 .container .inner .box .imgbox5 {
     width: 70px;
     height: 400px;
-    background-image: url(./img/img05.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #194134;
     opacity: .5;
-    z-index: -2;
+    /* z-index: ; */
 }
 
 .back {
