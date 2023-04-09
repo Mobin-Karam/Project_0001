@@ -94,7 +94,12 @@ imagebox1.addEventListener('click', () => {
     element3.style.opacity = '.5'
     element4.style.opacity = '.5'
     element5.style.opacity = '1'
+    let text = window.getComputedStyle(element5, '::after');
+    text.style.display = 'inline-block';
 });
+
+
+
 
 // let imagebox0 = document.querySelector('.back')
 // imagebox0.addEventListener('click', () => {

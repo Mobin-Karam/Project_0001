@@ -41,7 +41,7 @@
 .container .inner .box .imgbox1::after {
     content: 'NewYork';
     position: absolute;
-    display: none;
+    display: inline-block;
     color: #fff;
     top: 354px;
     left: 42px;
